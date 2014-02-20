@@ -11,15 +11,25 @@ namespace SimpleModel.Controllers
     {
         //
         // GET: /Customer/
+        public ActionResult Index()
+        {
+            return View();
+        }
 
+        [HttpPost]
         public ActionResult DisplayCustomer()
         {
             Customer objCustomer = new Customer();
-            objCustomer.Code = "1001";
-            objCustomer.Name = "John Smith";
-            objCustomer.Amount = 200.23;
+            objCustomer.Code = Request.Form["CustomerCode"];
+            objCustomer.Name = Request.Form["CustomerName"];
+            objCustomer.Amount = Convert.ToDouble(Request.Form["CustomerAmount"].ToString());
 
             return View("DisplayCustomer", objCustomer);
+        }
+
+        public ActionResult FillCustomer()
+        {
+            return View();
         }
     }
 }
