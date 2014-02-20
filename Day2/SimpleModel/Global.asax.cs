@@ -17,9 +17,9 @@ namespace SimpleModel
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "FillCustomer", // Route name
+                "Home", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Customer", action = "FillCustomer", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
         }
 

@@ -8,9 +8,9 @@
 </head>
 <body>
     <div>
-    The customer name is <%= Model.Name %> <br />
+    The customer name is <%= Model.ID %> <br />
     
-    The Customer Code is <%= Model.Code %> <br />
+    The Customer Code is <%= Model.CustomerCode %> <br />
 
     <% if (Model.Amount > 100)
        {

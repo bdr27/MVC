@@ -9,7 +9,7 @@
 </head>
 <body>
     <form method="post" action="DisplayCustomer">
-    Customer Name :- <input type="text" name="CustomerName" /> <br />
+    Customer ID :- <input type="text" name="CustomerID" /> <br />
     Customer Code :- <input type="text" name="CustomerCode" /> <br />
     Customer Amount :- <input type="text" name="CustomerAmount" /> <br />
     <input type="submit" value="Click Here" />

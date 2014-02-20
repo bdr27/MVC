@@ -9,6 +9,12 @@ namespace SimpleModel.Controllers
 {
     public class CustomerController : Controller
     {
+        List<Customer> customers = new List<Customer>();
+
+        public CustomerController()
+        {
+            var obj1 = new Customer();
+        }
         //
         // GET: /Customer/
         public ActionResult Index()
@@ -17,11 +23,11 @@ namespace SimpleModel.Controllers
         }
 
         [HttpPost]
-        public ActionResult DisplayCustomer()
+        public ActionResult DisplayCustomer(int id)
         {
             Customer objCustomer = new Customer();
-            objCustomer.Code = Request.Form["CustomerCode"];
-            objCustomer.Name = Request.Form["CustomerName"];
+            objCustomer.CustomerCode = Request.Form["CustomerCode"];
+            objCustomer.ID = Convert.ToInt32(Request.Form["CustomerID"]);
             objCustomer.Amount = Convert.ToDouble(Request.Form["CustomerAmount"].ToString());
 
             return View("DisplayCustomer", objCustomer);

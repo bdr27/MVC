@@ -7,44 +7,8 @@ namespace SimpleModel.Models
 {
     public class Customer
     {
-        private string _Code;
-        private string _Name;
-        private double _Amount;
-
-        public string Code
-        {
-            set
-            {
-                _Code = value;
-            }
-            get
-            {
-                return _Code;
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return _Name;
-            }
-            set
-            {
-                _Name = value;
-            }
-        }
-
-        public double Amount
-        {
-            set
-            {
-                _Amount = value;
-            }
-            get
-            {
-                return _Amount;
-            }
-        }
+        public int ID { set; get; }
+        public string CustomerCode { set; get; }
+        public double Amount { get; set; }
     }
 }
