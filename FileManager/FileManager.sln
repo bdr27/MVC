@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager", "FileManager\FileManager.csproj", "{7846AF4A-4C76-48A5-BAEE-09D3443DF455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManager.Tests", "FileManager.Tests\FileManager.Tests.csproj", "{274AE066-BB25-4CFB-8BD3-C99BBDFF1FDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7846AF4A-4C76-48A5-BAEE-09D3443DF455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7846AF4A-4C76-48A5-BAEE-09D3443DF455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7846AF4A-4C76-48A5-BAEE-09D3443DF455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7846AF4A-4C76-48A5-BAEE-09D3443DF455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274AE066-BB25-4CFB-8BD3-C99BBDFF1FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274AE066-BB25-4CFB-8BD3-C99BBDFF1FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274AE066-BB25-4CFB-8BD3-C99BBDFF1FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274AE066-BB25-4CFB-8BD3-C99BBDFF1FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
